@@ -8,7 +8,7 @@ using tyuiu.cources.programming.interfaces.Sprint6;
 
 namespace Tyuiu.KruchininEP.Sprint6.Task5.V30.Lib
 {
-    public class DataService : ISprint6Task5V13
+    public class DataService : ISprint6Task5V30
     {
         public int len = 0;
         public double[] LoadFromDataFile(string path)
