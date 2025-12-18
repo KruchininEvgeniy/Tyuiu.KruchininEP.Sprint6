@@ -1,16 +1,23 @@
-namespace Tyuiu.KruchininEP.Sprint6.Task7.V4
+using System;
+using System.Windows.Forms;
+
+namespace Tyuiu.KruchininEP.Sprint6.Task7.V10
 {
     internal static class Program
     {
         /// <summary>
-        ///  The main entry point for the application.
+        /// Главная точка входа для приложения KEP.
         /// </summary>
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
+            // Включаем визуальные стили для приложения
+            Application.EnableVisualStyles();
+
+            // Настраиваем отображение текста для совместимости
+            Application.SetCompatibleTextRenderingDefault(false);
+
+            // Создаем и запускаем главную форму приложения
             Application.Run(new FormMain());
         }
     }
